@@ -1,0 +1,15 @@
+{
+    "name": "Profile settings dumper",
+    "version": "1.0",
+    "author": "Vadim Kuznetsov",
+    "description": "Dumps all profile settings to an INI-like file",
+    "api": 7,
+    "supported_sdk_versions": [
+        "6.0.0",
+        "7.0.0",
+        "7.1.0",
+        "7.2.0",
+        "7.3.0",
+        "7.4.0"
+    ]
+}
