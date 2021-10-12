@@ -98,7 +98,7 @@ class ProfileSettingsDumper(WorkspaceWriter):
             value = '{raw_value:.4f}'.format(raw_value=raw_value).rstrip('0').rstrip('.')
         elif value_type == 'enum':
             choices = stack.getProperty(key, 'options')
-            value = choices[raw_value]
+            value = choices.get(raw_value, '<undefined>')
         else:
             value = raw_value
         dumper.add_param(name, value, stack.getProperty(key, 'unit'))
